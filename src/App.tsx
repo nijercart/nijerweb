@@ -64,8 +64,6 @@ function App() {
       portfolioDesc: "Discover how we've helped educational institutions across Bangladesh enhance their digital presence and improve student engagement",
       
       // Testimonials
-      testimonialsTitle: "Client Testimonials",
-      testimonialsDesc: "Hear from educational leaders who have partnered with us to transform their digital presence",
       
       // About
       aboutTitle: "About Nijer Web",
