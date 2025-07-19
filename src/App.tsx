@@ -36,65 +36,65 @@ function App() {
       // Hero Section
       heroTitle: "Revolutionizing Education",
       heroSubtitle: "Through Digital Innovation",
-      heroCompany: "🚀 Nijer Web Startup",
-      heroDescription: "We're a fast-growing tech startup transforming how educational institutions connect with students and parents. Our cutting-edge solutions empower schools across Bangladesh to thrive in the digital age.",
+      heroCompany: "Nijer Web - Educational Technology Solutions",
+      heroDescription: "We are a leading educational technology company specializing in comprehensive digital solutions for academic institutions. Our innovative platforms help schools, colleges, and universities across Bangladesh enhance their digital presence and improve student engagement.",
       getStarted: "Get Started",
       viewPortfolio: "See Our Work",
-      joinRevolution: "Join the Revolution",
+      learnMore: "Learn More",
       
       // Services
-      servicesTitle: "Innovative Solutions for Modern Education",
-      servicesDescription: "We're disrupting traditional educational websites with AI-powered, mobile-first solutions that scale with your institution",
+      servicesTitle: "Comprehensive Educational Technology Solutions",
+      servicesDescription: "We deliver professional, scalable digital platforms designed specifically for educational institutions, featuring modern design, robust functionality, and seamless user experience",
       primarySchools: "Primary Schools",
-      primaryDesc: "Smart digital platforms with AI-powered student tracking, gamified learning portals, and real-time parent engagement tools.",
+      primaryDesc: "Professional digital platforms with student information systems, interactive learning portals, and comprehensive parent communication tools.",
       kindergarten: "Kindergarten",
-      kindergartenDesc: "Interactive, child-friendly platforms with AR features, virtual tours, and instant photo sharing that parents love.",
+      kindergartenDesc: "Child-friendly, secure platforms with interactive features, virtual campus tours, and real-time updates for parents and guardians.",
       highSchools: "High Schools",
-      highSchoolsDesc: "Next-gen platforms with blockchain-verified certificates, AI tutoring integration, and social learning networks.",
+      highSchoolsDesc: "Advanced academic platforms with digital certificate management, online learning integration, and comprehensive student portals.",
       colleges: "Colleges",
-      collegesDesc: "Advanced portals with virtual campus tours, AI-powered course recommendations, and integrated career guidance.",
+      collegesDesc: "Sophisticated institutional websites with virtual campus experiences, course management systems, and integrated career services.",
       madrasas: "Madrasas",
-      madrasasDesc: "Modern Islamic education platforms with Quran learning apps, prayer time integration, and community features.",
+      madrasasDesc: "Culturally appropriate platforms for Islamic education with integrated learning tools, prayer schedules, and community engagement features.",
       international: "International Schools",
-      internationalDesc: "World-class platforms with global collaboration tools, virtual exchange programs, and multi-currency payment systems.",
+      internationalDesc: "International-standard platforms with multilingual support, global communication tools, and comprehensive administrative systems.",
       
       // Features
-      whyChoose: "Why We're Different",
-      whyChooseDesc: "We're not just another web agency - we're education technology innovators building the future of learning",
-      responsiveDesign: "AI-Powered Design",
-      responsiveDesc: "Machine learning algorithms that adapt your website's layout based on user behavior and preferences",
-      easyManagement: "No-Code Management",
-      easyDesc: "Revolutionary drag-and-drop interface that lets anyone update content without technical knowledge",
-      seoOptimized: "Growth Hacking",
-      seoDesc: "Built-in viral marketing tools and SEO automation that grows your online presence exponentially",
-      multiUser: "Smart Analytics",
-      multiUserDesc: "Real-time insights and predictive analytics that help you make data-driven decisions",
+      whyChoose: "Why Choose Nijer Web",
+      whyChooseDesc: "We combine technical expertise with deep understanding of educational needs to deliver solutions that truly serve your institution",
+      responsiveDesign: "Responsive Design",
+      responsiveDesc: "Mobile-first, responsive designs that provide optimal viewing experience across all devices and screen sizes",
+      easyManagement: "Easy Content Management",
+      easyDesc: "User-friendly content management system that allows non-technical staff to easily update and maintain website content",
+      seoOptimized: "SEO Optimized",
+      seoDesc: "Search engine optimized websites with fast loading speeds and improved visibility to help your institution reach more students",
+      multiUser: "Advanced Analytics",
+      multiUserDesc: "Comprehensive analytics and reporting tools to track website performance and user engagement patterns",
       
       // Portfolio
-      portfolioTitle: "Success Stories That Inspire",
-      portfolioDesc: "See how we've helped educational institutions 10x their digital engagement and student satisfaction",
+      portfolioTitle: "Our Portfolio of Success",
+      portfolioDesc: "Discover how we've helped educational institutions across Bangladesh enhance their digital presence and improve student engagement",
       
       // Testimonials
-      testimonialsTitle: "Voices of Transformation",
-      testimonialsDesc: "Real stories from institutions that chose innovation over tradition",
+      testimonialsTitle: "Client Testimonials",
+      testimonialsDesc: "Hear from educational leaders who have partnered with us to transform their digital presence",
       
       // About
-      aboutTitle: "Our Startup Journey",
-      aboutDesc1: "Born in 2018 from a dorm room idea, Nijer Web started as two university friends who saw how outdated educational websites were holding back Bangladesh's institutions. Today, we're a fast-growing startup with a mission to democratize quality education through technology.",
-      aboutDesc2: "We're not just building websites - we're creating digital ecosystems that connect students, teachers, and parents in ways never before possible. Our agile team moves fast, thinks big, and isn't afraid to challenge the status quo.",
+      aboutTitle: "About Nijer Web",
+      aboutDesc1: "Founded in 2018, Nijer Web emerged from a vision to bridge the digital gap in Bangladesh's educational sector. We recognized that many institutions lacked modern, effective online platforms to serve their communities. Today, we are a trusted technology partner for educational institutions nationwide.",
+      aboutDesc2: "Our mission is to empower educational institutions with professional, user-friendly digital solutions. We combine technical excellence with deep understanding of educational needs to create platforms that truly serve students, teachers, and parents effectively.",
       
       // Team
-      teamTitle: "Meet the Innovators",
-      teamDesc: "A diverse team of young entrepreneurs, tech enthusiasts, and education revolutionaries who believe technology can transform learning.",
+      teamTitle: "Our Professional Team",
+      teamDesc: "Meet our experienced team of developers, designers, and education specialists dedicated to delivering exceptional digital solutions for your institution.",
       
-      projectsCompleted: "Institutions Transformed",
-      yearsExperience: "Years Disrupting Education",
+      projectsCompleted: "Projects Completed",
+      yearsExperience: "Years of Experience",
       activeUsers: "Active Users",
-      growthRate: "Monthly Growth",
+      clientSatisfaction: "Client Satisfaction",
       
       // Contact
-      contactTitle: "Ready to Innovate?",
-      contactDesc: "Join the digital education revolution! Book a free strategy session and discover how we can 10x your institution's impact.",
+      contactTitle: "Get Started Today",
+      contactDesc: "Ready to enhance your institution's digital presence? Contact us for a consultation and discover how we can help you achieve your goals.",
       officeAddress: "Office Address",
       phone: "Phone",
       email: "Email",
@@ -107,12 +107,12 @@ function App() {
       sendMessage: "Send Message",
       
       // Footer
-      footerDesc: "A tech startup on a mission to revolutionize education in Bangladesh through innovative digital solutions and cutting-edge technology.",
+      footerDesc: "A professional technology company dedicated to providing comprehensive digital solutions for educational institutions across Bangladesh.",
       company: "Company",
       contactInfo: "Contact Info",
       privacyPolicy: "Privacy Policy",
       termsOfService: "Terms of Service",
-      footerCopyright: "© 2024 Nijer Web. All rights reserved. Proudly serving Bangladesh's educational sector."
+      footerCopyright: "© 2024 Nijer Web. All rights reserved. Professional web solutions for educational excellence."
     },
     bn: {
       // Navigation
@@ -126,15 +126,15 @@ function App() {
       // Hero Section
       heroTitle: "ডিজিটাল উদ্ভাবনের মাধ্যমে",
       heroSubtitle: "শিক্ষায় বিপ্লব",
-      heroCompany: "🚀 নিজের ওয়েব স্টার্টআপ",
-      heroDescription: "আমরা একটি দ্রুত বর্ধনশীল টেক স্টার্টআপ যা শিক্ষা প্রতিষ্ঠানগুলি কীভাবে ছাত্র ও অভিভাবকদের সাথে সংযুক্ত হয় তা পরিবর্তন করছি। আমাদের অত্যাধুনিক সমাধান বাংলাদেশের স্কুলগুলিকে ডিজিটাল যুগে উন্নতি করতে সক্ষম করে।",
+      heroCompany: "নিজের ওয়েব - শিক্ষা প্রযুক্তি সমাধান",
+      heroDescription: "আমরা একটি অগ্রণী শিক্ষা প্রযুক্তি কোম্পানি যা শিক্ষা প্রতিষ্ঠানের জন্য ব্যাপক ডিজিটাল সমাধান প্রদানে বিশেষজ্ঞ। আমাদের উদ্ভাবনী প্ল্যাটফর্মগুলি বাংলাদেশের স্কুল, কলেজ এবং বিশ্ববিদ্যালয়গুলিকে তাদের ডিজিটাল উপস্থিতি বৃদ্ধি করতে সাহায্য করে।",
       getStarted: "শুরু করুন",
       viewPortfolio: "আমাদের কাজ দেখুন",
-      joinRevolution: "বিপ্লবে যোগ দিন",
+      learnMore: "আরও জানুন",
       
       // Services
-      servicesTitle: "আধুনিক শিক্ষার জন্য উদ্ভাবনী সমাধান",
-      servicesDescription: "আমরা এআই-চালিত, মোবাইল-ফার্স্ট সমাধান দিয়ে ঐতিহ্যগত শিক্ষা ওয়েবসাইটে বিপ্লব আনছি যা আপনার প্রতিষ্ঠানের সাথে বৃদ্ধি পায়",
+      servicesTitle: "ব্যাপক শিক্ষা প্রযুক্তি সমাধান",
+      servicesDescription: "আমরা শিক্ষা প্রতিষ্ঠানের জন্য বিশেষভাবে ডিজাইন করা পেশাদার, স্কেলেবল ডিজিটাল প্ল্যাটফর্ম প্রদান করি, যা আধুনিক ডিজাইন, শক্তিশালী কার্যকারিতা এবং নিরবচ্ছিন্ন ব্যবহারকারীর অভিজ্ঞতা প্রদান করে",
       primarySchools: "প্রাথমিক বিদ্যালয়",
       primaryDesc: "এআই-চালিত ছাত্র ট্র্যাকিং, গেমিফাইড লার্নিং পোর্টাল এবং রিয়েল-টাইম অভিভাবক এনগেজমেন্ট টুলস সহ স্মার্ট ডিজিটাল প্ল্যাটফর্ম।",
       kindergarten: "কিন্ডারগার্টেন",
@@ -149,16 +149,16 @@ function App() {
       internationalDesc: "গ্লোবাল কোলাবরেশন টুলস, ভার্চুয়াল এক্সচেঞ্জ প্রোগ্রাম এবং মাল্টি-কারেন্সি পেমেন্ট সিস্টেম সহ বিশ্বমানের প্ল্যাটফর্ম।",
       
       // Features
-      whyChoose: "কেন আমরা আলাদা",
-      whyChooseDesc: "আমরা শুধু আরেকটি ওয়েব এজেন্সি নই - আমরা শিক্ষা প্রযুক্তি উদ্ভাবনকারী যারা শিক্ষার ভবিষ্যৎ তৈরি করছি",
-      responsiveDesign: "এআই-চালিত ডিজাইন",
-      responsiveDesc: "মেশিন লার্নিং অ্যালগরিদম যা ব্যবহারকারীর আচরণ এবং পছন্দের উপর ভিত্তি করে আপনার ওয়েবসাইটের লেআউট অভিযোজিত করে",
-      easyManagement: "নো-কোড ম্যানেজমেন্ট",
-      easyDesc: "বিপ্লবী ড্র্যাগ-অ্যান্ড-ড্রপ ইন্টারফেস যা যে কাউকে প্রযুক্তিগত জ্ঞান ছাড়াই কন্টেন্ট আপডেট করতে দেয়",
-      seoOptimized: "গ্রোথ হ্যাকিং",
-      seoDesc: "বিল্ট-ইন ভাইরাল মার্কেটিং টুলস এবং এসইও অটোমেশন যা আপনার অনলাইন উপস্থিতি দ্রুতগতিতে বৃদ্ধি করে",
-      multiUser: "স্মার্ট অ্যানালিটিক্স",
-      multiUserDesc: "রিয়েল-টাইম অন্তর্দৃষ্টি এবং ভবিষ্যদ্বাণীমূলক বিশ্লেষণ যা আপনাকে ডেটা-চালিত সিদ্ধান্ত নিতে সাহায্য করে",
+      whyChoose: "কেন নিজের ওয়েব বেছে নিবেন",
+      whyChooseDesc: "আমরা প্রযুক্তিগত দক্ষতার সাথে শিক্ষার প্রয়োজনের গভীর বোঝাপড়া একত্রিত করে এমন সমাধান প্রদান করি যা সত্যিকারের আপনার প্রতিষ্ঠানের সেবা করে",
+      responsiveDesign: "রেসপন্সিভ ডিজাইন",
+      responsiveDesc: "মোবাইল-ফার্স্ট, রেসপন্সিভ ডিজাইন যা সকল ডিভাইস এবং স্ক্রিন সাইজে সর্বোত্তম দেখার অভিজ্ঞতা প্রদান করে",
+      easyManagement: "সহজ কন্টেন্ট ম্যানেজমেন্ট",
+      easyDesc: "ব্যবহারকারী-বান্ধব কন্টেন্ট ম্যানেজমেন্ট সিস্টেম যা অ-প্রযুক্তিগত কর্মীদের সহজেই ওয়েবসাইট কন্টেন্ট আপডেট ও রক্ষণাবেক্ষণ করতে দেয়",
+      seoOptimized: "এসইও অপ্টিমাইজড",
+      seoDesc: "দ্রুত লোডিং গতি এবং উন্নত দৃশ্যমানতা সহ সার্চ ইঞ্জিন অপ্টিমাইজড ওয়েবসাইট যা আপনার প্রতিষ্ঠানকে আরও ছাত্রদের কাছে পৌঁছাতে সাহায্য করে",
+      multiUser: "উন্নত অ্যানালিটিক্স",
+      multiUserDesc: "ওয়েবসাইটের কর্মক্ষমতা এবং ব্যবহারকারীর এনগেজমেন্ট প্যাটার্ন ট্র্যাক করার জন্য ব্যাপক অ্যানালিটিক্স এবং রিপোর্টিং টুলস",
       
       // Portfolio
       portfolioTitle: "অনুপ্রেরণামূলক সাফল্যের গল্প",
@@ -169,22 +169,22 @@ function App() {
       testimonialsDesc: "প্রতিষ্ঠানগুলির বাস্তব গল্প যারা ঐতিহ্যের পরিবর্তে উদ্ভাবন বেছে নিয়েছে",
       
       // About
-      aboutTitle: "আমাদের স্টার্টআপ যাত্রা",
-      aboutDesc1: "২০১৮ সালে একটি ডর্ম রুমের আইডিয়া থেকে জন্ম, নিজের ওয়েব দুই বিশ্ববিদ্যালয়ের বন্ধু হিসেবে শুরু হয়েছিল যারা দেখেছিল কীভাবে পুরানো শিক্ষা ওয়েবসাইটগুলি বাংলাদেশের প্রতিষ্ঠানগুলিকে পিছিয়ে রাখছে। আজ, আমরা একটি দ্রুত বর্ধনশীল স্টার্টআপ যার মিশন প্রযুক্তির মাধ্যমে মানসম্পন্ন শিক্ষাকে গণতান্ত্রিক করা।",
-      aboutDesc2: "আমরা শুধু ওয়েবসাইট তৈরি করছি না - আমরা ডিজিটাল ইকোসিস্টেম তৈরি করছি যা ছাত্র, শিক্ষক এবং অভিভাবকদের এমনভাবে সংযুক্ত করে যা আগে কখনো সম্ভব ছিল না। আমাদের চটপটে দল দ্রুত এগিয়ে যায়, বড় চিন্তা করে এবং স্থিতাবস্থাকে চ্যালেঞ্জ করতে ভয় পায় না।",
+      aboutTitle: "নিজের ওয়েব সম্পর্কে",
+      aboutDesc1: "২০১৮ সালে প্রতিষ্ঠিত, নিজের ওয়েব বাংলাদেশের শিক্ষা খাতে ডিজিটাল ব্যবধান দূর করার দৃষ্টিভঙ্গি থেকে উদ্ভূত হয়েছে। আমরা স্বীকার করেছি যে অনেক প্রতিষ্ঠানের তাদের সম্প্রদায়ের সেবা করার জন্য আধুনিক, কার্যকর অনলাইন প্ল্যাটফর্মের অভাব রয়েছে। আজ, আমরা দেশব্যাপী শিক্ষা প্রতিষ্ঠানের একটি বিশ্বস্ত প্রযুক্তি অংশীদার।",
+      aboutDesc2: "আমাদের মিশন হল শিক্ষা প্রতিষ্ঠানগুলিকে পেশাদার, ব্যবহারকারী-বান্ধব ডিজিটাল সমাধান দিয়ে ক্ষমতায়ন করা। আমরা শিক্ষার প্রয়োজনের গভীর বোঝাপড়ার সাথে প্রযুক্তিগত উৎকর্ষতা একত্রিত করে এমন প্ল্যাটফর্ম তৈরি করি যা সত্যিকারের ছাত্র, শিক্ষক এবং অভিভাবকদের কার্যকরভাবে সেবা করে।",
       
       // Team
-      teamTitle: "উদ্ভাবনকারীদের সাথে পরিচিত হন",
-      teamDesc: "তরুণ উদ্যোক্তা, টেক উৎসাহী এবং শিক্ষা বিপ্লবীদের একটি বৈচিত্র্যময় দল যারা বিশ্বাস করে প্রযুক্তি শিক্ষাকে রূপান্তরিত করতে পারে।",
+      teamTitle: "আমাদের পেশাদার দল",
+      teamDesc: "আমাদের অভিজ্ঞ ডেভেলপার, ডিজাইনার এবং শিক্ষা বিশেষজ্ঞদের দলের সাথে পরিচিত হন যারা আপনার প্রতিষ্ঠানের জন্য ব্যতিক্রমী ডিজিটাল সমাধান প্রদানে নিবেদিত।",
       
-      projectsCompleted: "রূপান্তরিত প্রতিষ্ঠান",
-      yearsExperience: "বছর শিক্ষায় বিপ্লব",
+      projectsCompleted: "সম্পন্ন প্রকল্প",
+      yearsExperience: "বছরের অভিজ্ঞতা",
       activeUsers: "সক্রিয় ব্যবহারকারী",
-      growthRate: "মাসিক বৃদ্ধি",
+      clientSatisfaction: "ক্লায়েন্ট সন্তুষ্টি",
       
       // Contact
-      contactTitle: "উদ্ভাবনের জন্য প্রস্তুত?",
-      contactDesc: "ডিজিটাল শিক্ষা বিপ্লবে যোগ দিন! একটি বিনামূল্যে কৌশল সেশন বুক করুন এবং আবিষ্কার করুন কীভাবে আমরা আপনার প্রতিষ্ঠানের প্রভাব ১০ গুণ বৃদ্ধি করতে পারি।",
+      contactTitle: "আজই শুরু করুন",
+      contactDesc: "আপনার প্রতিষ্ঠানের ডিজিটাল উপস্থিতি বৃদ্ধি করতে প্রস্তুত? পরামর্শের জন্য আমাদের সাথে যোগাযোগ করুন এবং আবিষ্কার করুন কীভাবে আমরা আপনার লক্ষ্য অর্জনে সাহায্য করতে পারি।",
       officeAddress: "অফিসের ঠিকানা",
       phone: "ফোন",
       email: "ইমেইল",
@@ -197,12 +197,12 @@ function App() {
       sendMessage: "বার্তা পাঠান",
       
       // Footer
-      footerDesc: "একটি টেক স্টার্টআপ যার মিশন উদ্ভাবনী ডিজিটাল সমাধান এবং অত্যাধুনিক প্রযুক্তির মাধ্যমে বাংলাদেশে শিক্ষায় বিপ্লব আনা।",
+      footerDesc: "একটি পেশাদার প্রযুক্তি কোম্পানি যা বাংলাদেশের শিক্ষা প্রতিষ্ঠানের জন্য ব্যাপক ডিজিটাল সমাধান প্রদানে নিবেদিত।",
       company: "কোম্পানি",
       contactInfo: "যোগাযোগের তথ্য",
       privacyPolicy: "গোপনীয়তা নীতি",
       termsOfService: "সেবার শর্তাবলী",
-      footerCopyright: "© ২০২৪ নিজের ওয়েব। সকল অধিকার সংরক্ষিত। গর্বের সাথে বাংলাদেশের শিক্ষা খাতে সেবা প্রদান করছি।"
+      footerCopyright: "© ২০২৪ নিজের ওয়েব। সকল অধিকার সংরক্ষিত। শিক্ষার উৎকর্ষতার জন্য পেশাদার ওয়েব সমাধান।"
     }
   };
 
@@ -273,29 +273,29 @@ function App() {
       name: "Dhaka Future Academy",
       category: "Smart School",
       image: "https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=600",
-      description: "AI-powered learning platform with 300% increased engagement",
-      metrics: "300% ↗ Engagement"
+      description: "Comprehensive school management system with student portal and parent communication",
+      metrics: "500+ Students"
     },
     {
       name: "TechEd College Chittagong",
       category: "Digital College",
       image: "https://images.pexels.com/photos/5212080/pexels-photo-5212080.jpeg?auto=compress&cs=tinysrgb&w=600",
-      description: "Revolutionary student portal with blockchain certificates",
-      metrics: "500+ Students"
+      description: "Modern college website with course management and online admission system",
+      metrics: "2000+ Students"
     },
     {
       name: "Little Innovators Sylhet",
       category: "Smart Kindergarten",
       image: "https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=600",
-      description: "AR-enabled learning with real-time parent updates",
+      description: "Child-friendly website with photo galleries and parent communication tools",
       metrics: "95% Parent Satisfaction"
     },
     {
       name: "NextGen High Rajshahi",
       category: "Future School",
       image: "https://images.pexels.com/photos/5212703/pexels-photo-5212703.jpeg?auto=compress&cs=tinysrgb&w=600",
-      description: "Gamified learning platform with AI tutoring integration",
-      metrics: "40% Better Results"
+      description: "Professional high school website with academic information and student resources",
+      metrics: "1200+ Students"
     }
   ];
 
@@ -303,65 +303,65 @@ function App() {
     {
       name: "Dr. Rashida Rahman",
       position: "Principal, Dhaka Future Academy",
-      content: "Nijer Web didn't just build us a website - they transformed how we connect with students and parents. Our engagement rates have tripled, and parents love the real-time updates!",
+      content: "Nijer Web delivered a professional, comprehensive website that perfectly serves our school's needs. The platform is user-friendly for both staff and parents, and the ongoing support has been excellent.",
       rating: 5
     },
     {
       name: "Prof. Mohammad Hasan",
       position: "Director, TechEd College Chittagong",
-      content: "Working with this startup was a game-changer. They move fast, think outside the box, and delivered features we didn't even know we needed. Our students are amazed!",
+      content: "The team at Nijer Web demonstrated exceptional professionalism and technical expertise. They delivered our college website on time and within budget, exceeding our expectations in every way.",
       rating: 5
     },
     {
       name: "Mrs. Fatima Begum",
       position: "Owner, Little Innovators Sylhet",
-      content: "These young innovators understood our vision perfectly. The AR features have made learning so engaging for our kids, and parents can't stop talking about the app!",
+      content: "We are extremely satisfied with the quality of work and attention to detail. The website has significantly improved our communication with parents and enhanced our school's professional image.",
       rating: 5
     }
   ];
 
   const teamMembers = [
     {
-      name: "Rafiq Rahman",
-      position: "Co-Founder & CEO",
+      name: "Md. Rafiqul Islam",
+      position: "Chief Executive Officer",
       image: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400",
-      bio: "Former Google intern turned education revolutionary. Dropped out of BUET to build the future of learning. Passionate about AI and its potential to democratize education.",
-      skills: ["AI/ML", "Product Strategy", "EdTech", "Leadership", "Vision"]
+      bio: "Computer Science graduate from BUET with over 10 years of experience in educational technology. Led multiple successful projects for schools and universities across Bangladesh.",
+      skills: ["Leadership", "Project Management", "EdTech Strategy", "Business Development", "Team Building"]
     },
     {
-      name: "Fatima Ahmed",
-      position: "Co-Founder & Chief Design Officer",
+      name: "Fatima Khatun",
+      position: "Lead UI/UX Designer",
       image: "https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg?auto=compress&cs=tinysrgb&w=400",
-      bio: "Award-winning designer who believes beautiful interfaces can make learning addictive. Former startup founder with a passion for creating delightful user experiences.",
-      skills: ["Design Systems", "User Psychology", "Prototyping", "Brand Strategy", "Innovation"]
+      bio: "Creative designer specializing in educational interfaces with 8+ years of experience. Expert in creating user-friendly designs that enhance learning experiences for students and educators.",
+      skills: ["UI/UX Design", "User Research", "Prototyping", "Design Systems", "Educational Psychology"]
     },
     {
-      name: "Sakib Hassan",
-      position: "CTO & Tech Lead",
+      name: "Mohammad Hasan",
+      position: "Senior Backend Developer",
       image: "https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=400",
-      bio: "Full-stack wizard who codes like poetry. Built his first app at 16, now architecting scalable solutions that serve thousands of students across Bangladesh.",
-      skills: ["React", "Node.js", "AI Integration", "Cloud Architecture", "DevOps"]
+      bio: "Software engineer with expertise in database design and server architecture. Specializes in building robust, scalable backend systems for educational platforms with high user loads.",
+      skills: ["Node.js", "Database Design", "API Development", "Cloud Computing", "System Architecture"]
     },
     {
-      name: "Nusrat Jahan",
-      position: "Head of Growth",
+      name: "Ayesha Rahman",
+      position: "Frontend Developer",
       image: "https://images.pexels.com/photos/3785077/pexels-photo-3785077.jpeg?auto=compress&cs=tinysrgb&w=400",
-      bio: "Growth hacker extraordinaire who helped scale multiple startups. Expert in viral marketing and data-driven growth strategies for educational platforms.",
-      skills: ["Growth Hacking", "Analytics", "Digital Marketing", "A/B Testing", "Viral Strategies"]
+      bio: "Frontend specialist focused on creating responsive, accessible web applications. Expert in modern JavaScript frameworks and ensuring optimal user experience across all devices.",
+      skills: ["React", "JavaScript", "Responsive Design", "Web Accessibility", "Performance Optimization"]
     },
     {
-      name: "Arif Khan",
-      position: "Education Innovation Lead",
+      name: "Dr. Shahidul Islam",
+      position: "Education Consultant",
       image: "https://images.pexels.com/photos/2182969/pexels-photo-2182969.jpeg?auto=compress&cs=tinysrgb&w=400",
-      bio: "Former teacher turned EdTech innovator. Bridges the gap between traditional education and cutting-edge technology with deep understanding of local needs.",
-      skills: ["Curriculum Design", "Teacher Training", "EdTech Research", "Change Management", "Innovation"]
+      bio: "Former school principal with 25+ years in education. Provides valuable insights into educational workflows and helps design solutions that truly meet institutional needs.",
+      skills: ["Educational Leadership", "Curriculum Development", "Teacher Training", "Academic Administration", "Policy Development"]
     },
     {
-      name: "Riya Sultana",
-      position: "Head of Customer Success",
+      name: "Nasir Ahmed",
+      position: "Digital Marketing Specialist",
       image: "https://images.pexels.com/photos/3785078/pexels-photo-3785078.jpeg?auto=compress&cs=tinysrgb&w=400",
-      bio: "Customer obsessed leader who ensures every institution we work with becomes a success story. Expert in onboarding and scaling educational technology adoption.",
-      skills: ["Customer Success", "Training", "Support", "Relationship Building", "Process Optimization"]
+      bio: "Digital marketing expert specializing in educational sector promotion. Helps institutions improve their online visibility and reach their target audience effectively.",
+      skills: ["SEO", "Content Marketing", "Social Media", "Google Analytics", "Online Advertising"]
     }
   ];
 
@@ -440,7 +440,8 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center relative z-10">
             <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-purple-100 to-emerald-100 rounded-full text-sm font-medium text-purple-800 mb-6">
-              🚀 <span className="ml-2">Backed by innovation • Trusted by 150+ institutions</span>
+              <CheckCircle className="w-4 h-4 mr-2" />
+              <span>Trusted by 150+ Educational Institutions • Professional Excellence Since 2018</span>
             </div>
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
               {t.heroTitle}
@@ -475,8 +476,8 @@ function App() {
                 <p className="text-gray-600 text-sm">{t.activeUsers}</p>
               </div>
               <div className="text-center">
-                <p className="text-3xl font-bold bg-gradient-to-r from-purple-600 to-emerald-600 bg-clip-text text-transparent">25%</p>
-                <p className="text-gray-600 text-sm">{t.growthRate}</p>
+                <p className="text-3xl font-bold bg-gradient-to-r from-purple-600 to-emerald-600 bg-clip-text text-transparent">98%</p>
+                <p className="text-gray-600 text-sm">{t.clientSatisfaction}</p>
               </div>
             </div>
           </div>
