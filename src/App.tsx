@@ -832,8 +832,8 @@ function App() {
             <div>
               <h3 className="text-lg font-semibold mb-4">Contact Info</h3>
               <div className="space-y-2 text-gray-400">
-                <p>WeWork Dhaka, Level 8</p>
-                <p>Gulshan Avenue, Dhaka 1212</p>
+                <p>House 45, Road 12</p>
+                <p>Dhanmondi, Dhaka 1209</p>
                 <p>+880 1700-NIJER (64537)</p>
                 <p>hello@nijerweb.com</p>
               </div>
