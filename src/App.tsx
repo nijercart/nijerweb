@@ -73,6 +73,8 @@ function App() {
       aboutDesc2: "Our mission is to empower educational institutions with professional, user-friendly digital solutions. We combine technical excellence with deep understanding of educational needs to create platforms that truly serve students, teachers, and parents effectively.",
       
       // Team
+      teamTitle: "Our Professional Team",
+      teamDesc: "Meet our experienced team of developers, designers, and education specialists dedicated to delivering exceptional digital solutions for your institution.",
       
       projectsCompleted: "Projects Completed",
       yearsExperience: "Years of Experience",
@@ -94,7 +96,6 @@ function App() {
       sendMessage: "Send Message",
       
       // Footer
-      footerDesc: "A professional technology company dedicated to providing comprehensive digital solutions for educational institutions across Bangladesh.",
       company: "Company",
       contactInfo: "Contact Info",
       privacyPolicy: "Privacy Policy",
