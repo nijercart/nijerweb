@@ -64,11 +64,11 @@ function App() {
       portfolioDesc: "Discover how we've helped educational institutions across Bangladesh enhance their digital presence and improve student engagement",
       
       // Testimonials
+      testimonialsTitle: "Client Testimonials",
+      testimonialsDesc: "Hear from educational leaders who have partnered with us to transform their digital presence",
       
       // About
       aboutTitle: "About Nijer Web",
-      aboutDesc1: "Founded in 2018, Nijer Web emerged from a vision to bridge the digital gap in Bangladesh's educational sector. We recognized that many institutions lacked modern, effective online platforms to serve their communities. Today, we are a trusted technology partner for educational institutions nationwide.",
-      aboutDesc2: "Our mission is to empower educational institutions with professional, user-friendly digital solutions. We combine technical excellence with deep understanding of educational needs to create platforms that truly serve students, teachers, and parents effectively.",
       
       // Team
       teamTitle: "Our Professional Team",
