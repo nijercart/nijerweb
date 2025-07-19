@@ -96,6 +96,7 @@ function App() {
       sendMessage: "Send Message",
       
       // Footer
+      footerDesc: "A professional technology company dedicated to providing comprehensive digital solutions for educational institutions across Bangladesh.",
       company: "Company",
       contactInfo: "Contact Info",
       privacyPolicy: "Privacy Policy",
