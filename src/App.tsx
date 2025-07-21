@@ -15,238 +15,65 @@ import {
   Star,
   ArrowRight,
   CheckCircle,
-  Laptop,
-  Languages
+  Laptop
 } from 'lucide-react';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [language, setLanguage] = useState('en'); // 'en' for English, 'bn' for Bangla
-
-  const translations = {
-    en: {
-      // Navigation
-      home: "Home",
-      services: "Services",
-      portfolio: "Portfolio",
-      about: "About",
-      contact: "Contact",
-      
-      // Hero Section
-      heroTitle: "Bangladesh's Leading",
-      heroSubtitle: "Educational Website",
-      heroCompany: "Development Company",
-      heroDescription: "We specialize in creating professional, modern websites for educational institutions across Bangladesh. From kindergartens to international schools, we build digital solutions that enhance learning and communication.",
-      getStarted: "Get Started",
-      viewPortfolio: "View Portfolio",
-      
-      // Services
-      servicesTitle: "Our Educational Website Services",
-      servicesDescription: "We provide comprehensive web development solutions tailored for different types of educational institutions",
-      primarySchools: "Primary Schools",
-      primaryDesc: "Complete website solutions for primary schools with student management, online classes, and parent portals.",
-      kindergarten: "Kindergarten",
-      kindergartenDesc: "Colorful and interactive websites for kindergartens with photo galleries, activity schedules, and communication tools.",
-      highSchools: "High Schools",
-      highSchoolsDesc: "Advanced websites for high schools with admission systems, exam results, and academic resource management.",
-      colleges: "Colleges",
-      collegesDesc: "Professional college websites with course catalogs, faculty profiles, and student information systems.",
-      madrasas: "Madrasas",
-      madrasasDesc: "Culturally appropriate websites for madrasas with Islamic calendar integration and multilingual support.",
-      international: "International Schools",
-      internationalDesc: "Global-standard websites for international schools with multi-language support and international curriculum features.",
-      
-      // Features
-      whyChoose: "Why Choose Nijer Web?",
-      whyChooseDesc: "We combine technical expertise with deep understanding of Bangladesh's educational sector",
-      responsiveDesign: "Responsive Design",
-      responsiveDesc: "Mobile-first approach ensuring perfect display on all devices",
-      easyManagement: "Easy Management",
-      easyDesc: "User-friendly admin panels for easy content updates",
-      seoOptimized: "SEO Optimized",
-      seoDesc: "Built-in SEO features to improve search engine rankings",
-      multiUser: "Multi-user Support",
-      multiUserDesc: "Role-based access for teachers, students, and administrators",
-      
-      // Portfolio
-      portfolioTitle: "Our Recent Projects",
-      portfolioDesc: "Explore some of our successful educational website projects across Bangladesh",
-      
-      // Testimonials
-      testimonialsTitle: "What Our Clients Say",
-      testimonialsDesc: "Hear from educational institutions who have transformed their online presence with us",
-      
-      // About
-      aboutTitle: "About Nijer Web",
-      aboutDesc1: "Founded in 2018, Nijer Web has been at the forefront of educational website development in Bangladesh. We understand the unique challenges and requirements of educational institutions in our country.",
-      aboutDesc2: "Our team of skilled developers and designers work closely with schools, colleges, and madrasas to create digital solutions that enhance communication, streamline administration, and improve the overall educational experience.",
-      projectsCompleted: "Projects Completed",
-      yearsExperience: "Years Experience",
-      
-      // Contact
-      contactTitle: "Get In Touch",
-      contactDesc: "Ready to transform your educational institution's online presence? Contact us today for a free consultation.",
-      officeAddress: "Office Address",
-      phone: "Phone",
-      email: "Email",
-      institutionName: "Institution Name",
-      emailAddress: "Email Address",
-      institutionType: "Institution Type",
-      selectType: "Select institution type",
-      message: "Message",
-      messagePlaceholder: "Tell us about your project requirements...",
-      sendMessage: "Send Message",
-      
-      // Footer
-      footerDesc: "Bangladesh's leading educational website development company, empowering institutions with modern digital solutions.",
-      company: "Company",
-      contactInfo: "Contact Info",
-      privacyPolicy: "Privacy Policy",
-      termsOfService: "Terms of Service",
-      footerCopyright: "© 2024 Nijer Web. All rights reserved. Proudly serving Bangladesh's educational sector."
-    },
-    bn: {
-      // Navigation
-      home: "হোম",
-      services: "সেবাসমূহ",
-      portfolio: "পোর্টফোলিও",
-      about: "আমাদের সম্পর্কে",
-      contact: "যোগাযোগ",
-      
-      // Hero Section
-      heroTitle: "বাংলাদেশের শীর্ষস্থানীয়",
-      heroSubtitle: "শিক্ষা প্রতিষ্ঠানের ওয়েবসাইট",
-      heroCompany: "ডেভেলপমেন্ট কোম্পানি",
-      heroDescription: "আমরা বাংলাদেশের শিক্ষা প্রতিষ্ঠানের জন্য পেশাদার, আধুনিক ওয়েবসাইট তৈরিতে বিশেষজ্ঞ। কিন্ডারগার্টেন থেকে আন্তর্জাতিক স্কুল পর্যন্ত, আমরা ডিজিটাল সমাধান তৈরি করি যা শিক্ষা ও যোগাযোগ উন্নত করে।",
-      getStarted: "শুরু করুন",
-      viewPortfolio: "পোর্টফোলিও দেখুন",
-      
-      // Services
-      servicesTitle: "আমাদের শিক্ষা প্রতিষ্ঠানের ওয়েবসাইট সেবা",
-      servicesDescription: "আমরা বিভিন্ন ধরনের শিক্ষা প্রতিষ্ঠানের জন্য বিশেষভাবে তৈরি ওয়েব ডেভেলপমেন্ট সমাধান প্রদান করি",
-      primarySchools: "প্রাথমিক বিদ্যালয়",
-      primaryDesc: "ছাত্র ব্যবস্থাপনা, অনলাইন ক্লাস এবং অভিভাবক পোর্টাল সহ প্রাথমিক বিদ্যালয়ের জন্য সম্পূর্ণ ওয়েবসাইট সমাধান।",
-      kindergarten: "কিন্ডারগার্টেন",
-      kindergartenDesc: "ফটো গ্যালারি, কার্যক্রমের সময়সূচী এবং যোগাযোগের সরঞ্জাম সহ কিন্ডারগার্টেনের জন্য রঙিন এবং ইন্টারঅ্যাক্টিভ ওয়েবসাইট।",
-      highSchools: "উচ্চ বিদ্যালয়",
-      highSchoolsDesc: "ভর্তি ব্যবস্থা, পরীক্ষার ফলাফল এবং একাডেমিক রিসোর্স ব্যবস্থাপনা সহ উচ্চ বিদ্যালয়ের জন্য উন্নত ওয়েবসাইট।",
-      colleges: "কলেজ",
-      collegesDesc: "কোর্স ক্যাটালগ, অনুষদের প্রোফাইল এবং ছাত্র তথ্য ব্যবস্থা সহ পেশাদার কলেজ ওয়েবসাইট।",
-      madrasas: "মাদ্রাসা",
-      madrasasDesc: "ইসলামিক ক্যালেন্ডার ইন্টিগ্রেশন এবং বহুভাষিক সাপোর্ট সহ মাদ্রাসার জন্য সাংস্কৃতিকভাবে উপযুক্ত ওয়েবসাইট।",
-      international: "আন্তর্জাতিক স্কুল",
-      internationalDesc: "বহুভাষিক সাপোর্ট এবং আন্তর্জাতিক পাঠ্যক্রমের বৈশিষ্ট্য সহ আন্তর্জাতিক স্কুলের জন্য বিশ্বমানের ওয়েবসাইট।",
-      
-      // Features
-      whyChoose: "কেন নিজের ওয়েব বেছে নেবেন?",
-      whyChooseDesc: "আমরা বাংলাদেশের শিক্ষা খাতের গভীর বোঝাপড়ার সাথে প্রযুক্তিগত দক্ষতা একত্রিত করি",
-      responsiveDesign: "রেসপন্সিভ ডিজাইন",
-      responsiveDesc: "সকল ডিভাইসে নিখুঁত প্রদর্শন নিশ্চিত করে মোবাইল-ফার্স্ট পদ্ধতি",
-      easyManagement: "সহজ ব্যবস্থাপনা",
-      easyDesc: "সহজ কন্টেন্ট আপডেটের জন্য ব্যবহারকারী-বান্ধব অ্যাডমিন প্যানেল",
-      seoOptimized: "এসইও অপ্টিমাইজড",
-      seoDesc: "সার্চ ইঞ্জিন র‍্যাঙ্কিং উন্নত করতে বিল্ট-ইন এসইও বৈশিষ্ট্য",
-      multiUser: "মাল্টি-ইউজার সাপোর্ট",
-      multiUserDesc: "শিক্ষক, ছাত্র এবং প্রশাসকদের জন্য ভূমিকা-ভিত্তিক অ্যাক্সেস",
-      
-      // Portfolio
-      portfolioTitle: "আমাদের সাম্প্রতিক প্রকল্প",
-      portfolioDesc: "বাংলাদেশ জুড়ে আমাদের সফল শিক্ষা প্রতিষ্ঠানের ওয়েবসাইট প্রকল্পগুলি অন্বেষণ করুন",
-      
-      // Testimonials
-      testimonialsTitle: "আমাদের ক্লায়েন্টরা কী বলেন",
-      testimonialsDesc: "শিক্ষা প্রতিষ্ঠানগুলির কাছ থেকে শুনুন যারা আমাদের সাথে তাদের অনলাইন উপস্থিতি রূপান্তরিত করেছে",
-      
-      // About
-      aboutTitle: "নিজের ওয়েব সম্পর্কে",
-      aboutDesc1: "২০১৮ সালে প্রতিষ্ঠিত, নিজের ওয়েব বাংলাদেশে শিক্ষা প্রতিষ্ঠানের ওয়েবসাইট ডেভেলপমেন্টে অগ্রগামী। আমরা আমাদের দেশের শিক্ষা প্রতিষ্ঠানের অনন্য চ্যালেঞ্জ এবং প্রয়োজনীয়তা বুঝি।",
-      aboutDesc2: "আমাদের দক্ষ ডেভেলপার এবং ডিজাইনারদের দল স্কুল, কলেজ এবং মাদ্রাসার সাথে ঘনিষ্ঠভাবে কাজ করে ডিজিটাল সমাধান তৈরি করে যা যোগাযোগ উন্নত করে, প্রশাসন সহজ করে এবং সামগ্রিক শিক্ষার অভিজ্ঞতা উন্নত করে।",
-      projectsCompleted: "সম্পন্ন প্রকল্প",
-      yearsExperience: "বছরের অভিজ্ঞতা",
-      
-      // Contact
-      contactTitle: "যোগাযোগ করুন",
-      contactDesc: "আপনার শিক্ষা প্রতিষ্ঠানের অনলাইন উপস্থিতি রূপান্তরিত করতে প্রস্তুত? বিনামূল্যে পরামর্শের জন্য আজই আমাদের সাথে যোগাযোগ করুন।",
-      officeAddress: "অফিসের ঠিকানা",
-      phone: "ফোন",
-      email: "ইমেইল",
-      institutionName: "প্রতিষ্ঠানের নাম",
-      emailAddress: "ইমেইল ঠিকানা",
-      institutionType: "প্রতিষ্ঠানের ধরন",
-      selectType: "প্রতিষ্ঠানের ধরন নির্বাচন করুন",
-      message: "বার্তা",
-      messagePlaceholder: "আপনার প্রকল্পের প্রয়োজনীয়তা সম্পর্কে আমাদের বলুন...",
-      sendMessage: "বার্তা পাঠান",
-      
-      // Footer
-      footerDesc: "বাংলাদেশের শীর্ষস্থানীয় শিক্ষা প্রতিষ্ঠানের ওয়েবসাইট ডেভেলপমেন্ট কোম্পানি, আধুনিক ডিজিটাল সমাধান দিয়ে প্রতিষ্ঠানগুলিকে ক্ষমতায়ন করছে।",
-      company: "কোম্পানি",
-      contactInfo: "যোগাযোগের তথ্য",
-      privacyPolicy: "গোপনীয়তা নীতি",
-      termsOfService: "সেবার শর্তাবলী",
-      footerCopyright: "© ২০২৪ নিজের ওয়েব। সকল অধিকার সংরক্ষিত। গর্বের সাথে বাংলাদেশের শিক্ষা খাতে সেবা প্রদান করছি।"
-    }
-  };
-
-  const t = translations[language];
-
-  const toggleLanguage = () => {
-    setLanguage(language === 'en' ? 'bn' : 'en');
-  };
 
   const services = [
     {
       icon: <School className="w-12 h-12 text-emerald-600" />,
-      title: t.primarySchools,
-      description: t.primaryDesc
+      title: "Primary Schools",
+      description: "Complete website solutions for primary schools with student management, online classes, and parent portals."
     },
     {
       icon: <Users className="w-12 h-12 text-emerald-600" />,
-      title: t.kindergarten,
-      description: t.kindergartenDesc
+      title: "Kindergarten",
+      description: "Colorful and interactive websites for kindergartens with photo galleries, activity schedules, and communication tools."
     },
     {
       icon: <GraduationCap className="w-12 h-12 text-emerald-600" />,
-      title: t.highSchools,
-      description: t.highSchoolsDesc
+      title: "High Schools",
+      description: "Advanced websites for high schools with admission systems, exam results, and academic resource management."
     },
     {
       icon: <Building2 className="w-12 h-12 text-emerald-600" />,
-      title: t.colleges,
-      description: t.collegesDesc
+      title: "Colleges",
+      description: "Professional college websites with course catalogs, faculty profiles, and student information systems."
     },
     {
       icon: <BookOpen className="w-12 h-12 text-emerald-600" />,
-      title: t.madrasas,
-      description: t.madrasasDesc
+      title: "Madrasas",
+      description: "Culturally appropriate websites for madrasas with Islamic calendar integration and multilingual support."
     },
     {
       icon: <Globe className="w-12 h-12 text-emerald-600" />,
-      title: t.international,
-      description: t.internationalDesc
+      title: "International Schools",
+      description: "Global-standard websites for international schools with multi-language support and international curriculum features."
     }
   ];
 
   const features = [
     {
       icon: <Laptop className="w-8 h-8 text-blue-600" />,
-      title: t.responsiveDesign,
-      description: t.responsiveDesc
+      title: "Responsive Design",
+      description: "Mobile-first approach ensuring perfect display on all devices"
     },
     {
       icon: <CheckCircle className="w-8 h-8 text-blue-600" />,
-      title: t.easyManagement,
-      description: t.easyDesc
+      title: "Easy Management",
+      description: "User-friendly admin panels for easy content updates"
     },
     {
       icon: <Award className="w-8 h-8 text-blue-600" />,
-      title: t.seoOptimized,
-      description: t.seoDesc
+      title: "SEO Optimized",
+      description: "Built-in SEO features to improve search engine rankings"
     },
     {
       icon: <Users className="w-8 h-8 text-blue-600" />,
-      title: t.multiUser,
-      description: t.multiUserDesc
+      title: "Multi-user Support",
+      description: "Role-based access for teachers, students, and administrators"
     }
   ];
 
@@ -311,23 +138,12 @@ function App() {
             
             {/* Desktop Navigation */}
             <nav className="hidden md:flex space-x-8">
-              <a href="#home" className="text-gray-700 hover:text-emerald-600 transition-colors">{t.home}</a>
-              <a href="#services" className="text-gray-700 hover:text-emerald-600 transition-colors">{t.services}</a>
-              <a href="#portfolio" className="text-gray-700 hover:text-emerald-600 transition-colors">{t.portfolio}</a>
-              <a href="#about" className="text-gray-700 hover:text-emerald-600 transition-colors">{t.about}</a>
-              <a href="#contact" className="text-gray-700 hover:text-emerald-600 transition-colors">{t.contact}</a>
+              <a href="#home" className="text-gray-700 hover:text-emerald-600 transition-colors">Home</a>
+              <a href="#services" className="text-gray-700 hover:text-emerald-600 transition-colors">Services</a>
+              <a href="#portfolio" className="text-gray-700 hover:text-emerald-600 transition-colors">Portfolio</a>
+              <a href="#about" className="text-gray-700 hover:text-emerald-600 transition-colors">About</a>
+              <a href="#contact" className="text-gray-700 hover:text-emerald-600 transition-colors">Contact</a>
             </nav>
-
-            {/* Language Toggle */}
-            <div className="hidden md:flex items-center space-x-4">
-              <button
-                onClick={toggleLanguage}
-                className="flex items-center space-x-2 px-3 py-2 rounded-lg bg-emerald-50 text-emerald-600 hover:bg-emerald-100 transition-colors"
-              >
-                <Languages className="w-4 h-4" />
-                <span className="text-sm font-medium">{language === 'en' ? 'বাংলা' : 'English'}</span>
-              </button>
-            </div>
 
             {/* Mobile menu button */}
             <button 
@@ -342,18 +158,11 @@ function App() {
           {isMenuOpen && (
             <div className="md:hidden pb-4">
               <div className="flex flex-col space-y-2">
-                <a href="#home" className="px-3 py-2 text-gray-700 hover:text-emerald-600 transition-colors">{t.home}</a>
-                <a href="#services" className="px-3 py-2 text-gray-700 hover:text-emerald-600 transition-colors">{t.services}</a>
-                <a href="#portfolio" className="px-3 py-2 text-gray-700 hover:text-emerald-600 transition-colors">{t.portfolio}</a>
-                <a href="#about" className="px-3 py-2 text-gray-700 hover:text-emerald-600 transition-colors">{t.about}</a>
-                <a href="#contact" className="px-3 py-2 text-gray-700 hover:text-emerald-600 transition-colors">{t.contact}</a>
-                <button
-                  onClick={toggleLanguage}
-                  className="flex items-center space-x-2 px-3 py-2 mx-3 rounded-lg bg-emerald-50 text-emerald-600 hover:bg-emerald-100 transition-colors"
-                >
-                  <Languages className="w-4 h-4" />
-                  <span className="text-sm font-medium">{language === 'en' ? 'বাংলা' : 'English'}</span>
-                </button>
+                <a href="#home" className="px-3 py-2 text-gray-700 hover:text-emerald-600 transition-colors">Home</a>
+                <a href="#services" className="px-3 py-2 text-gray-700 hover:text-emerald-600 transition-colors">Services</a>
+                <a href="#portfolio" className="px-3 py-2 text-gray-700 hover:text-emerald-600 transition-colors">Portfolio</a>
+                <a href="#about" className="px-3 py-2 text-gray-700 hover:text-emerald-600 transition-colors">About</a>
+                <a href="#contact" className="px-3 py-2 text-gray-700 hover:text-emerald-600 transition-colors">Contact</a>
               </div>
             </div>
           )}
@@ -365,20 +174,21 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-              {t.heroTitle}
-              <span className="text-emerald-600 block">{t.heroSubtitle}</span>
-              {t.heroCompany}
+              Bangladesh's Leading
+              <span className="text-emerald-600 block">Educational Website</span>
+              Development Company
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-              {t.heroDescription}
+              We specialize in creating professional, modern websites for educational institutions across Bangladesh. 
+              From kindergartens to international schools, we build digital solutions that enhance learning and communication.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="#contact" className="inline-flex items-center px-8 py-3 bg-emerald-600 text-white font-semibold rounded-lg hover:bg-emerald-700 transition-colors">
-                {t.getStarted}
+                Get Started
                 <ArrowRight className="ml-2 w-5 h-5" />
               </a>
               <a href="#portfolio" className="inline-flex items-center px-8 py-3 border-2 border-emerald-600 text-emerald-600 font-semibold rounded-lg hover:bg-emerald-600 hover:text-white transition-colors">
-                {t.viewPortfolio}
+                View Portfolio
               </a>
             </div>
           </div>
@@ -390,10 +200,10 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              {t.servicesTitle}
+              Our Educational Website Services
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              {t.servicesDescription}
+              We provide comprehensive web development solutions tailored for different types of educational institutions
             </p>
           </div>
           
@@ -414,10 +224,10 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              {t.whyChoose}
+              Why Choose Nijer Web?
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              {t.whyChooseDesc}
+              We combine technical expertise with deep understanding of Bangladesh's educational sector
             </p>
           </div>
           
@@ -440,10 +250,10 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              {t.portfolioTitle}
+              Our Recent Projects
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              {t.portfolioDesc}
+              Explore some of our successful educational website projects across Bangladesh
             </p>
           </div>
           
@@ -471,10 +281,10 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              {t.testimonialsTitle}
+              What Our Clients Say
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              {t.testimonialsDesc}
+              Hear from educational institutions who have transformed their online presence with us
             </p>
           </div>
           
@@ -503,22 +313,24 @@ function App() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                {t.aboutTitle}
+                About Nijer Web
               </h2>
               <p className="text-lg text-gray-600 mb-6">
-                {t.aboutDesc1}
+                Founded in 2018, Nijer Web has been at the forefront of educational website development in Bangladesh. 
+                We understand the unique challenges and requirements of educational institutions in our country.
               </p>
               <p className="text-lg text-gray-600 mb-8">
-                {t.aboutDesc2}
+                Our team of skilled developers and designers work closely with schools, colleges, and madrasas to create 
+                digital solutions that enhance communication, streamline administration, and improve the overall educational experience.
               </p>
               <div className="grid grid-cols-2 gap-8">
                 <div className="text-center">
                   <p className="text-3xl font-bold text-emerald-600 mb-2">150+</p>
-                  <p className="text-gray-600">{t.projectsCompleted}</p>
+                  <p className="text-gray-600">Projects Completed</p>
                 </div>
                 <div className="text-center">
                   <p className="text-3xl font-bold text-emerald-600 mb-2">5+</p>
-                  <p className="text-gray-600">{t.yearsExperience}</p>
+                  <p className="text-gray-600">Years Experience</p>
                 </div>
               </div>
             </div>
@@ -538,10 +350,10 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              {t.contactTitle}
+              Get In Touch
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              {t.contactDesc}
+              Ready to transform your educational institution's online presence? Contact us today for a free consultation.
             </p>
           </div>
           
@@ -551,7 +363,7 @@ function App() {
                 <div className="flex items-start">
                   <MapPin className="w-6 h-6 text-emerald-600 mt-1 mr-4" />
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 mb-2">{t.officeAddress}</h3>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-2">Office Address</h3>
                     <p className="text-gray-600">
                       House 45, Road 12, Block C<br />
                       Banani, Dhaka 1213<br />
@@ -563,7 +375,7 @@ function App() {
                 <div className="flex items-start">
                   <Phone className="w-6 h-6 text-emerald-600 mt-1 mr-4" />
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 mb-2">{t.phone}</h3>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-2">Phone</h3>
                     <p className="text-gray-600">+880 1712-345678</p>
                   </div>
                 </div>
@@ -571,7 +383,7 @@ function App() {
                 <div className="flex items-start">
                   <Mail className="w-6 h-6 text-emerald-600 mt-1 mr-4" />
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 mb-2">{t.email}</h3>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-2">Email</h3>
                     <p className="text-gray-600">info@nijerweb.com</p>
                   </div>
                 </div>
@@ -582,19 +394,19 @@ function App() {
               <form className="space-y-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-                    {t.institutionName}
+                    Institution Name
                   </label>
                   <input 
                     type="text" 
                     id="name" 
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-600 focus:border-emerald-600"
-                    placeholder={language === 'en' ? "Your school/college name" : "আপনার স্কুল/কলেজের নাম"}
+                    placeholder="Your school/college name"
                   />
                 </div>
                 
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                    {t.emailAddress}
+                    Email Address
                   </label>
                   <input 
                     type="email" 
@@ -606,31 +418,31 @@ function App() {
                 
                 <div>
                   <label htmlFor="type" className="block text-sm font-medium text-gray-700 mb-2">
-                    {t.institutionType}
+                    Institution Type
                   </label>
                   <select 
                     id="type" 
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-600 focus:border-emerald-600"
                   >
-                    <option value="">{t.selectType}</option>
-                    <option value="primary">{t.primarySchools}</option>
-                    <option value="kindergarten">{t.kindergarten}</option>
-                    <option value="high-school">{t.highSchools}</option>
-                    <option value="college">{t.colleges}</option>
-                    <option value="madrasa">{t.madrasas}</option>
-                    <option value="international">{t.international}</option>
+                    <option value="">Select institution type</option>
+                    <option value="primary">Primary School</option>
+                    <option value="kindergarten">Kindergarten</option>
+                    <option value="high-school">High School</option>
+                    <option value="college">College</option>
+                    <option value="madrasa">Madrasa</option>
+                    <option value="international">International School</option>
                   </select>
                 </div>
                 
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-                    {t.message}
+                    Message
                   </label>
                   <textarea 
                     id="message" 
                     rows={4}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-600 focus:border-emerald-600"
-                    placeholder={t.messagePlaceholder}
+                    placeholder="Tell us about your project requirements..."
                   ></textarea>
                 </div>
                 
@@ -638,7 +450,7 @@ function App() {
                   type="submit"
                   className="w-full bg-emerald-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-emerald-700 transition-colors"
                 >
-                  {t.sendMessage}
+                  Send Message
                 </button>
               </form>
             </div>
