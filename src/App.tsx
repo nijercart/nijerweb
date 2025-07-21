@@ -34,9 +34,9 @@ function App() {
       contact: "Contact",
       
       // Hero Section
-      heroTitle: "Revolutionizing Education",
-      heroSubtitle: "Through Digital Innovation",
-      heroCompany: "Nijer Web - Professional Educational Technology Solutions",
+      heroTitle: "Transforming Educational Excellence",
+      heroSubtitle: "Through Advanced Digital Solutions",
+      heroCompany: "Nijer Web Limited - Your Trusted Technology Partner",
       heroDescription: "We are Bangladesh's premier educational technology company, providing enterprise-grade digital solutions for academic institutions. Our comprehensive platforms enable schools, colleges, and universities to modernize their operations, enhance administrative efficiency, and deliver superior educational experiences.",
       getStarted: "Get Started",
       viewPortfolio: "View Portfolio",
@@ -113,8 +113,9 @@ function App() {
       contact: "যোগাযোগ",
       
       // Hero Section
-      heroTitle: "ডিজিটাল উদ্ভাবনের মাধ্যমে",
-      heroSubtitle: "শিক্ষায় বিপ্লব",
+      heroTitle: "শিক্ষার উৎকর্ষতায় রূপান্তর",
+      heroSubtitle: "উন্নত ডিজিটাল সমাধানের মাধ্যমে",
+      heroCompany: "নিজের ওয়েব লিমিটেড - আপনার বিশ্বস্ত প্রযুক্তি অংশীদার",
       getStarted: "শুরু করুন",
       viewPortfolio: "আমাদের কাজ দেখুন",
       learnMore: "আরও জানুন",
@@ -431,10 +432,12 @@ function App() {
               <span>Trusted by 150+ Educational Institutions • Professional Excellence Since 2018</span>
             </div>
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-              {t.heroTitle}
-              <span className="bg-gradient-to-r from-purple-600 to-emerald-600 bg-clip-text text-transparent block">{t.heroSubtitle}</span>
-              <span className="text-2xl md:text-3xl font-normal text-gray-700">{t.heroCompany}</span>
+              <span className="block text-gray-900">{t.heroTitle}</span>
+              <span className="bg-gradient-to-r from-purple-600 to-emerald-600 bg-clip-text text-transparent block mt-2">{t.heroSubtitle}</span>
             </h1>
+            <div className="text-xl md:text-2xl font-medium text-gray-700 mb-4">
+              {t.heroCompany}
+            </div>
             <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
               {t.heroDescription}
             </p>
